@@ -1,0 +1,27 @@
+{
+  "groups": [
+    {
+      "name": "zzy.fjgx",
+      "type": "com.inspur.zzy.fjgx.common.core.service.FJConfiguationProperties",
+      "sourceType": "com.inspur.zzy.fjgx.common.core.service.FJConfiguationProperties"
+    }
+  ],
+  "properties": [
+    {
+      "name": "zzy.fjgx.sap",
+      "type": "java.util.Map<java.lang.String,java.lang.String>",
+      "sourceType": "com.inspur.zzy.fjgx.common.core.service.FJConfiguationProperties"
+    },
+    {
+      "name": "zzy.fjgx.sfrz",
+      "type": "java.util.Map<java.lang.String,java.lang.String>",
+      "sourceType": "com.inspur.zzy.fjgx.common.core.service.FJConfiguationProperties"
+    },
+    {
+      "name": "zzy.fjgx.zj",
+      "type": "java.util.Map<java.lang.String,java.lang.String>",
+      "sourceType": "com.inspur.zzy.fjgx.common.core.service.FJConfiguationProperties"
+    }
+  ],
+  "hints": []
+}

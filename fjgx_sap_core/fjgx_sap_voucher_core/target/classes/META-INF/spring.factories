@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+    com.inspur.zzy.fjgx.sap.voucher.core.config.VoucherAutoConfiguration

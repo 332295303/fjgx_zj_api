@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="fjgx_common_core" />
+        <module name="fjgx_sap_voucher_core" />
+        <module name="fjgx_sap_api_voucher" />
+        <module name="fjgx_qywx_api" />
+        <module name="fjgx_sfrz_api" />
+        <module name="fjgx_zj_core" />
+        <module name="fjgx_fsex_core" />
+        <module name="fjgx_zj_api" />
+        <module name="fjgx_fsex_api" />
+        <module name="fjgx_sfrz_core" />
+        <module name="fjgx_common_api" />
+        <module name="fjgx_qywx_core" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="fjgx" target="1.8" />
+      <module name="fjgx_common_api" target="1.8" />
+      <module name="fjgx_common_core" target="1.8" />
+      <module name="fjgx_fsex_api" target="1.8" />
+      <module name="fjgx_fsex_core" target="1.8" />
+      <module name="fjgx_qywx_api" target="1.8" />
+      <module name="fjgx_qywx_core" target="1.8" />
+      <module name="fjgx_sap_api" target="1.8" />
+      <module name="fjgx_sap_api_voucher" target="1.8" />
+      <module name="fjgx_sap_core" target="1.8" />
+      <module name="fjgx_sap_voucher_core" target="1.8" />
+      <module name="fjgx_sfrz_api" target="1.8" />
+      <module name="fjgx_sfrz_core" target="1.8" />
+      <module name="fjgx_zj_api" target="1.8" />
+      <module name="fjgx_zj_core" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

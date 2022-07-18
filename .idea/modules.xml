@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/fjgx.iml" filepath="$PROJECT_DIR$/fjgx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fjgx_common_api/fjgx_common_api.iml" filepath="$PROJECT_DIR$/fjgx_common_api/fjgx_common_api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fjgx_common_core/fjgx_common_core.iml" filepath="$PROJECT_DIR$/fjgx_common_core/fjgx_common_core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fjgx_fsex_api/fjgx_fsex_api.iml" filepath="$PROJECT_DIR$/fjgx_fsex_api/fjgx_fsex_api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fjgx_fsex_core/fjgx_fsex_core.iml" filepath="$PROJECT_DIR$/fjgx_fsex_core/fjgx_fsex_core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fjgx_qywx_api/fjgx_qywx_api.iml" filepath="$PROJECT_DIR$/fjgx_qywx_api/fjgx_qywx_api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fjgx_qywx_core/fjgx_qywx_core.iml" filepath="$PROJECT_DIR$/fjgx_qywx_core/fjgx_qywx_core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fjgx_sap_api/fjgx_sap_api.iml" filepath="$PROJECT_DIR$/fjgx_sap_api/fjgx_sap_api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fjgx_sap_api/fjgx_sap_voucher_api/fjgx_sap_api_voucher.iml" filepath="$PROJECT_DIR$/fjgx_sap_api/fjgx_sap_voucher_api/fjgx_sap_api_voucher.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fjgx_sap_core/fjgx_sap_core.iml" filepath="$PROJECT_DIR$/fjgx_sap_core/fjgx_sap_core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fjgx_sap_core/fjgx_sap_voucher_core/fjgx_sap_voucher_core.iml" filepath="$PROJECT_DIR$/fjgx_sap_core/fjgx_sap_voucher_core/fjgx_sap_voucher_core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fjgx_sfrz_api/fjgx_sfrz_api.iml" filepath="$PROJECT_DIR$/fjgx_sfrz_api/fjgx_sfrz_api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fjgx_sfrz_core/fjgx_sfrz_core.iml" filepath="$PROJECT_DIR$/fjgx_sfrz_core/fjgx_sfrz_core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fjgx_zj_api/fjgx_zj_api.iml" filepath="$PROJECT_DIR$/fjgx_zj_api/fjgx_zj_api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fjgx_zj_core/fjgx_zj_core.iml" filepath="$PROJECT_DIR$/fjgx_zj_core/fjgx_zj_core.iml" />
+    </modules>
+  </component>
+</project>

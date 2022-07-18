@@ -1,0 +1,8 @@
+com\inspur\zzy\fjgx\sfrz\core\config\SFRZAutoConfiguation.class
+com\inspur\zzy\fjgx\sfrz\core\service\FJSSOAuthProvider.class
+com\inspur\zzy\fjgx\sfrz\core\service\FJSSOUserServiceImpl.class
+com\inspur\zzy\fjgx\sfrz\core\service\FJSSOAuthenticationProvider.class
+com\inspur\zzy\fjgx\sfrz\core\domain\entity\FJGSPUserEntity.class
+com\inspur\zzy\fjgx\sfrz\core\domain\repository\FJUserRepository.class
+com\inspur\zzy\fjgx\sfrz\core\service\FJSSOAuthentication.class
+com\inspur\zzy\fjgx\sfrz\core\service\FJSSOCredentialsImpl.class

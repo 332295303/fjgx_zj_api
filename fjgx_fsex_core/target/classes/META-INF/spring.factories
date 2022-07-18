@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+    com.inspur.zzy.fjgx.fsex.core.config.FSExAutoConfiguation
