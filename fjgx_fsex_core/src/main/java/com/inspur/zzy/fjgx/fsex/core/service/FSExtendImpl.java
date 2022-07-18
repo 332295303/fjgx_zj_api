@@ -588,17 +588,18 @@ public class FSExtendImpl implements FSExtend {
 
                             return result;
                         } else {
+                            StringBuffer errormessage = new StringBuffer();
                             //当返回失败时候需要根据cheak_id 在支付明细中反写上错误信息
                             JSONArray rd = xmlTranJsonObject.getJSONArray("RD");
                             for (int i = 0; i < rd.size(); i++) {
                                 JSONObject jsonObject1 = rd.getJSONObject(i);
                                 String check_id = jsonObject1.getString("CHECK_ID");
                                 String message = jsonObject1.getString("message");
-
-                                rktrtSqlUtils.insertCapitalPlanSql(SqlCommon.getSqlIstFailt(check_id, message));
+                                errormessage.append(message);
+                                //rktrtSqlUtils.insertCapitalPlanSql(SqlCommon.getSqlIstFailt(check_id, message));
                             }
                             result.put("result", false);
-                            result.put("Message", xmlTranJsonObject.getString("message"));
+                            result.put("Message", xmlTranJsonObject.getString("message")+errormessage.toString());
                             result.put("Code", 0);
                             result.put("value", "");
                             return result;
@@ -631,7 +632,7 @@ public class FSExtendImpl implements FSExtend {
 
             result.put("result", true);
             result.put("Message", "审核通过");
-            result.put("Code", 0);
+            result.put("Code", 1);
             result.put("value", "");
             return result;
         }
