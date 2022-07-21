@@ -169,7 +169,7 @@ public interface FSExtend {
 
     /*
       创建审核通过语句
-              insert into FSSPCOMPONENTINVOKE(
+               insert into FSSPCOMPONENTINVOKE(
               FSSPCOMPONENTINVOKE_NM, --1
               Fsspcomponentinvoke_Czfid,--2
               Fsspcomponentinvoke_Czid, --3
@@ -187,7 +187,7 @@ public interface FSExtend {
               values
               (
               'fjgx_fsex_approvepass', --1
-              'FSBZ',--2
+              'FSSP',--2
               'RSApprovePassAfter', --3
               '单据审核通过',--4
               'fjgx_fsex_approvepass',--5
@@ -196,10 +196,11 @@ public interface FSExtend {
               'com.inspur.zzy.fjgx.fsex.approvepass',--8
               'fsextend',--9
               'fjgx',--10
-              'FSROBX',--11
+              'WBCOMP',--11
               '报销单',--12
               'map'--13
               )
+
        */
     /*
      *流程审核通过完成扩展

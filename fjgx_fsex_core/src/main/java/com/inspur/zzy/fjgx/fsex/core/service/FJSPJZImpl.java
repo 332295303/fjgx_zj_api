@@ -12,6 +12,7 @@ import org.apache.commons.lang3.StringUtils;
 import javax.ws.rs.NotSupportedException;
 import java.sql.SQLException;
 import java.util.Map;
+import java.util.Objects;
 import java.util.Optional;
 
 @Slf4j
@@ -27,7 +28,8 @@ public class FJSPJZImpl implements FJSPJZ {
         log.info("进入getApprover");
         FJSPJZRepository spjzRepository = SpringBeanUtils.getBean(FJSPJZRepository.class);
         Map<String,Object> context= (Map<String, Object>) inParam.get("contextParam");
-        String billid = context.get("BILLID").toString();
+        String billid = Objects.nonNull(context.get("BILLID"))? context.get("BILLID").toString(): "";
+
         log.info("单据内码:{}",billid);
             /*"methodParam": {
                 "xzbmid": "9ce6afef-da99-d9b9-794d-7dfdd2256e69;ROFYFT;ROFYFT_BXNM",
@@ -35,6 +37,10 @@ public class FJSPJZImpl implements FJSPJZ {
            }*/
 
         Result result;
+        if(billid.length() == 0) {
+            result = Result.success("");
+            return result;
+        }
 
         try
         {
