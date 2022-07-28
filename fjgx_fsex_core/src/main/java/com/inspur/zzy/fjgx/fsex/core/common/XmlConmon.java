@@ -56,7 +56,7 @@ public class XmlConmon {
         sbf.append("<PUBLIC_FLAG>").append(PUBLIC_FLAG).append("</PUBLIC_FLAG>");
         //数据行主键
         sbf.append("<CHECK_ID>").append(CHECK_ID).append("</CHECK_ID>");
-        sbf.append("<OCCUPY_ID>").append(OCCUPY_ID).append("</OCCUPY_ID>");
+        sbf.append("<SUBJECT_CODE>").append(OCCUPY_ID).append("</SUBJECT_CODE>");
         sbf.append("</REC>");
 
         return sbf.toString();

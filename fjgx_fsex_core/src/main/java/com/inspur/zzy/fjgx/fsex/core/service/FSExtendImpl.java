@@ -129,9 +129,10 @@ public class FSExtendImpl implements FSExtend {
                             String xmlPlanMonthAmountQuery = XmlConmon.getXmlPlanMonthAmountQuery(ENTITY_ID, ENTITY_NAME, SUBJECT_ID, SUBJECT_NAME, FISCAL_MONTH, PROCESS_FLAG, DOCUMENT_NO, AMOUNT, REMARK, CHECK_ID, ORIGIN_APP);
                             String s = null;
                             try {
+                                log.info("占用资金计划传递参数"+xmlPlanMonthAmountQuery);
                                 s = WebServiceUtils.soapPost(urlCommon.urlPlanMonthAmountQuery(), xmlPlanMonthAmountQuery);
                                 JSONObject xmlTranJsonObject = ReadXmlUtils.getXmlTranJsonObject(s);
-                                log.error(xmlTranJsonObject.toString());
+                                log.info("占用资金计划返回参数"+xmlTranJsonObject.toString());
                                 if ("1".equals(xmlTranJsonObject.getString("flag"))) {
                                     result.put("Message",xmlTranJsonObject.getString("mess"));
                                     entry.getValue();
@@ -385,13 +386,15 @@ public class FSExtendImpl implements FSExtend {
                             //数据来源系统
                             String ORIGIN_APP = "01";
 
-                            //调用资金计划的占用接口
+                            //调用资金计划的释放接口
+
                             String xmlPlanMonthAmountQuery = XmlConmon.getXmlPlanMonthAmountQuery(ENTITY_ID, ENTITY_NAME, SUBJECT_ID, SUBJECT_NAME, FISCAL_MONTH, PROCESS_FLAG, DOCUMENT_NO, AMOUNT, REMARK, CHECK_ID, ORIGIN_APP);
+                            log.info("资金计划撤回接口发送报文"+xmlPlanMonthAmountQuery);
                             String s = null;
                             try {
                                 s = WebServiceUtils.soapPost(urlCommon.urlPlanMonthAmountQuery(), xmlPlanMonthAmountQuery);
                                 JSONObject xmlTranJsonObject = ReadXmlUtils.getXmlTranJsonObject(s);
-                                log.error(xmlTranJsonObject.toString());
+                                log.info("资金计划撤回返回接口报文"+xmlTranJsonObject.toString());
                                 if ("1".equals(xmlTranJsonObject.getString("flag"))) {
                                     result.put("Message", xmlTranJsonObject.getString("mess"));
                                     entry.getValue();
@@ -644,7 +647,7 @@ public class FSExtendImpl implements FSExtend {
     //单据驳回操作
     @Override
     public Map<String, Object> approvebackAfter(Map<String, Object> paraMap) {
-        log.debug("approveback");
+        log.info("approveback");
         Map<String, Object> result = new HashMap<>();
         result.put("result", true);
         result.put("Message", "");
