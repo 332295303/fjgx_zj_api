@@ -7,12 +7,11 @@ public class Conmon {
         sbfSql.append("select ");
         sbfSql.append("unit.ID as CHECK_ID, ");//--数据行主键
         sbfSql.append("unit.name_chs as ENTITY_NAME, ");// --名称
-        sbfSql.append("unit.summary as ENTITY_ID, ");// --公司编码
+        sbfSql.append("unit.PLAINTEXT1 as ENTITY_ID, ");// --公司编码
         sbfSql.append("01 as ORIGIN_APP, ");//--浪潮标识
-       sbfSql.append("TO_CHAR(SYSDATE,'YYYYMM') as FISCAL_MONTH ");//--时间格式
-//        sbfSql.append("TO_date('202204','YYYYMM') as FISCAL_MONTH ");//--时间格式
+        sbfSql.append("TO_CHAR(SYSDATE,'YYYYMM') as FISCAL_MONTH ");//--时间格式
         sbfSql.append("from ");
-        sbfSql.append("BFMASTERORGANIZATION unit");//--组织表
+        sbfSql.append("bfadminorganization unit where trim(PLAINTEXT1) is not null");//--组织表
         return sbfSql.toString();
     }
 
