@@ -1,0 +1,6 @@
+com\inspur\zzy\fjgx\qywx\core\config\ServiceConfigClass.class
+com\inspur\zzy\fjgx\qywx\core\utils\HttpUtils.class
+com\inspur\zzy\fjgx\qywx\core\common\URLWxAskCommon.class
+com\inspur\zzy\fjgx\qywx\core\common\QywxCommon.class
+com\inspur\zzy\fjgx\qywx\core\service\PFTaskEventListenerEx.class
+com\inspur\zzy\fjgx\qywx\core\common\SQLQywxCommon.class
